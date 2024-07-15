@@ -9,6 +9,8 @@ Run python program
 - display methods + properties:
     > print(dir(fn))
 
+- Turn off format code: # fmt: off
+
 """
 
 print("Hello, World!")
