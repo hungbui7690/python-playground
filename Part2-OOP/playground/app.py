@@ -1,7 +1,6 @@
 """
-Python __del__
-
-
-
+Customize and Extend Python Enum Class
 
 """
+
+#
