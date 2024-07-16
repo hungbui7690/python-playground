@@ -1,11 +1,12 @@
 """
 super().__init__()
-
 - The __init__() method of the SalesEmployee class has some parts that are the same as the ones in the __init__() method of the Employee class.
 
 - To avoid duplication, you can call the __init__() method of Employee class from the __init__() method of the SalesEmployee class.
 
 - To reference the Employee class in the SalesEmployee class, you use the super(). The super() returns a reference of the parent class from a child class.
+
+@@ super().__init__(name, base_pay, bonus)
 
 """
 
@@ -30,4 +31,5 @@ class SalesEmployee(Employee):
         return self.base_pay + self.bonus + self.sales_incentive
 
 
-# When you create an instance of the SalesEmployee class, Python will execute the __init__() method in the SalesEmployee class. In turn, this __init__() method calls the __init__() method of the Employee class to initialize the name, base_pay, and bonus.
+# When you create an instance of the SalesEmployee class, Python will execute the __init__ method in the SalesEmployee class.
+# In turn, this __init__ method calls the __init__ method of the Employee class to initialize the name, base_pay, and bonus.

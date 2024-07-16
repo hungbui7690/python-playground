@@ -30,9 +30,9 @@ class Parser:
 """
 The Parser class has an attribute text which specifies a piece of text to be parsed. Also, the Parser class has three methods:
 
-    The email() method parses a text and returns the email.
-    The phone() method parses a text and returns a phone number in the format nnn-nnnn-nnnn where n is a number from 0 to 9 e.g., 408-205-5663.
-    The parse() method returns a dictionary that contains two elements email and phone. It calls the email() and phone() method to extract the email and phone from the text attribute.
+    - The email() method parses a text and returns the email.
+    - The phone() method parses a text and returns a phone number in the format nnn-nnnn-nnnn where n is a number from 0 to 9 e.g., 408-205-5663.
+    - The parse() method returns a dictionary that contains two elements email and phone. It calls the email() and phone() method to extract the email and phone from the text attribute.
 
 """
 

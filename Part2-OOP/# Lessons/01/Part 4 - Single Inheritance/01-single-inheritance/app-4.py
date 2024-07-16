@@ -1,6 +1,9 @@
 """
 issubclass
 
+- Everything is subclass of "object"
+!! issubclass(Person, object)
+
 """
 
 

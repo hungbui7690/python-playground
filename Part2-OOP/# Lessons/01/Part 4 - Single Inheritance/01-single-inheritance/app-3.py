@@ -28,7 +28,6 @@ print(type(employee))  # <class '__main__.Employee'>
 
 # To check if an object is an instance of a class, you use the isinstance() method. For example:
 print(isinstance(person, Person))  # True
-
 print(isinstance(employee, Person))  # True
 print(isinstance(employee, Employee))  # True
 print(isinstance(person, Employee))  # False
