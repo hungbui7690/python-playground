@@ -1,7 +1,6 @@
 """
 CLASS VARIABLES
 
-
 Introduction to the Python class variables
 
 - Everything in Python is an object including a class. In other words, a class is an object in Python.
@@ -9,7 +8,7 @@ Introduction to the Python class variables
 """
 
 
-# When you define a class using the class keyword, Python creates an object with the name the same as the class’s name. For example:
+# When you define a class using the class keyword, Python creates an object with the name the same as the class’s name. For example: this will create HtmlDocument object
 class HtmlDocument:
     # Both extension and version are the class variables of the HtmlDocument class. They’re bound to the HtmlDocument class.
     extension = "html"
@@ -23,6 +22,8 @@ print(HtmlDocument.__name__)  # HtmlDocument
 
 # And the HTMLDocument has the type of type:
 print(type(HtmlDocument))  # <class 'type'>
+
+print(type(type))  # <class 'type'>
 
 
 # It’s also an instance of the type class:

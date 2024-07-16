@@ -3,6 +3,12 @@ Single inheritance
 
 - A class can reuse another class by inheriting it. When a child class inherits from a parent class, the child class can access the attributes and methods of the parent class.
 
+@@ class Employee(Person):
+
+@@ super().__init__(name, age)
+
+@@ return super().greet()
+
 """
 
 

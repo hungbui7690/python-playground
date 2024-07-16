@@ -7,6 +7,10 @@ Define static method
 
 - To define a static method, you use the @staticmethod decorator.
 
+## static method is like util
+
+@@  @staticmethod
+
 """
 
 

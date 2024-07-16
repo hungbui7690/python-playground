@@ -1,4 +1,4 @@
-/*
+"""
   What is Python programming language
   - Python is a high-level, general-purpose, interpreted programming language.
   
@@ -55,4 +55,4 @@
     Python becomes the solution in many domains from web applications, data analysis, data science, machine learning, and AI.
     Use Python 3 for the new development.
 
-*/
+"""

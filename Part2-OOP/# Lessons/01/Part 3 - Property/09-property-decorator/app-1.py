@@ -2,12 +2,13 @@
 Property Decorator
 - @property
 
-    class property(fget=None, fset=None, fdel=None, doc=None)
+    @@ class property(fget=None, fset=None, fdel=None, doc=None)
 
 """
 
 
 # The following defines a Person class with two attributes name and age:
+# With this setup, we have 2 ways to get the age property
 class Person:
     def __init__(self, name, age):
         self.name = name

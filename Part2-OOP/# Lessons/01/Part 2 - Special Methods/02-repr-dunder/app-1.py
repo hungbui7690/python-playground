@@ -6,7 +6,6 @@ Python __repr__
 
 - In other words, if you pass the returned string of the object_name.__repr__() method to the eval() function, you’ll get the same value as the object_name. Let’s take a look at an example.
 
-
 """
 
 

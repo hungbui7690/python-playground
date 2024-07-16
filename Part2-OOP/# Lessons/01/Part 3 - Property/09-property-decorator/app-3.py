@@ -1,8 +1,7 @@
 """
 Property Decorator
-- @property
 
-    class property(fget=None, fset=None, fdel=None, doc=None)
+!! @property
 
 """
 

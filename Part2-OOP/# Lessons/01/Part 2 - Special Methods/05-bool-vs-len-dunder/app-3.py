@@ -1,15 +1,13 @@
 """
 Python __len__
-- If a custom class doesn’t have the __bool__ method, Python will look for the __len__() method. If the __len__ is zero, the object is False. Otherwise, it’s True.
+!! If a custom class doesn’t have the __bool__ method, Python will look for the __len__() method. If the __len__ is zero, the object is False. Otherwise, it’s True.
 
-- If a class doesn’t implement the __bool__ and __len__ methods, the objects of the class will evaluate to True.
+@@ If a class doesn’t implement the __bool__ and __len__ methods, the objects of the class will evaluate to True.
 
 """
 
 
 # The following defines a Payroll class that doesn’t implement __bool__ but the __len__ method:
-
-
 class Payroll:
     def __init__(self, length):
         self.length = length

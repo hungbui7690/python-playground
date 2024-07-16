@@ -27,7 +27,7 @@ class className:
 
 
 # To call a static method, you use this syntax:
-# className.static_method_name()
+# ClassName.static_method_name()
 
 
 """

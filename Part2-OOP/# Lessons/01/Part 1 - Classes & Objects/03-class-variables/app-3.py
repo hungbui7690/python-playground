@@ -1,6 +1,8 @@
 """
 Set values for class variables
 
+@@ setattr(HtmlDocument, "version", 10)
+
 """
 
 

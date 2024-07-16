@@ -14,6 +14,7 @@ class Person:
         self.last_name = last_name
         self.age = age
 
+    # Check the age of 2 instances
     def __eq__(self, other):
         return self.age == other.age
 
@@ -28,4 +29,4 @@ print(john == mary)  # False
 
 # The following compares a Person object with an integer:
 print(john == 20)
-# It returns an error: AttributeError: 'int' object has no attribute 'age'
+# AttributeError: 'int' object has no attribute 'age'

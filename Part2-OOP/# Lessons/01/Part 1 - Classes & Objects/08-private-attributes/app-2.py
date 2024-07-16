@@ -10,6 +10,8 @@ PRIVATE ATTRIBUTES
 
 - This means that the _attribute should not be manipulated and may have a breaking change in the future.
 
+## We still can access to _attribute from outside of class. It just the convention between devs. It states that this attribute is private and doesn't allow to modify
+
 """
 
 
@@ -28,3 +30,9 @@ class Counter:
 
     def reset(self):
         self._current = 0
+
+
+counter = Counter()
+
+# We still can access this "private" attribute from outside of the class
+print(counter._current)  # 0

@@ -5,8 +5,6 @@ STATIC METHODS
 
 
 # The following defines a class called TemperatureConverter that has static methods for converting temperatures between Celsius, Fahrenheit, and Kelvin:
-
-
 class TemperatureConverter:
     KEVIN = ("K",)
     FAHRENHEIT = "F"

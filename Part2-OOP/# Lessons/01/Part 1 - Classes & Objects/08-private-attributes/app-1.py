@@ -1,17 +1,18 @@
 """
 PRIVATE ATTRIBUTES
 
-Introduction to encapsulation in Python
+  Introduction to encapsulation in Python
 
-- Encapsulation is one of the four fundamental concepts in object-oriented programming including abstraction, encapsulation, inheritance, and polymorphism.
+  - Encapsulation is one of the four fundamental concepts in object-oriented programming including abstraction, encapsulation, inheritance, and polymorphism.
 
-- Encapsulation is the packing of data and functions that work on that data within a single object. By doing so, you can hide the internal state of the object from the outside. This is known as information hiding.
+  - Encapsulation is the packing of data and functions that work on that data within a single object. By doing so, you can hide the internal state of the object from the outside. This is known as information hiding.
 
-- A class is an example of encapsulation. A class bundles data and methods into a single unit. And a class provides the access to its attributes via methods.
+  - A class is an example of encapsulation. A class bundles data and methods into a single unit. And a class provides the access to its attributes via methods.
 
-- The idea of information hiding is that if you have an attribute that isn’t visible to the outside, you can control the access to its value to make sure your object is always has a valid state.
+  - The idea of information hiding is that if you have an attribute that isn’t visible to the outside, you can control the access to its value to make sure your object is always has a valid state.
 
-- I.E. we use the remote to control TV. We don't know what's going on inside the remote. But we know what happen when we press the buttons on the remote,
+  - I.E. we use the remote to control TV. We don't know what's going on inside the remote. But we know what happen when we press the buttons on the remote.
+    > From this, we can see that all the details are hidden.
 
 """
 

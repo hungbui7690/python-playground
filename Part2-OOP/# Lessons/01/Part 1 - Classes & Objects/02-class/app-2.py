@@ -3,6 +3,8 @@ A class is also an object in Python
 
 - Everything in Python is an object, including classes.
 
+@@ print(Person.__name__)
+
 """
 
 

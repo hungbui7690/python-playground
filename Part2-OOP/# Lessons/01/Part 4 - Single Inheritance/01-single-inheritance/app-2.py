@@ -2,6 +2,8 @@
 Inheritance
 - Inheritance allows a class to reuse the logic of an existing class
 
+@@ class Employee(Person):
+
 """
 
 

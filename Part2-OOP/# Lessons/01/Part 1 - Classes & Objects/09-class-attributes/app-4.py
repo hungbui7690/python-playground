@@ -4,11 +4,11 @@ When to use Python class attributes
 - Class attributes are useful in some cases such as storing class constants, tracking data across all instances, and defining default values.
 
 
-1) Storing class constants
+    1) Storing class constants
 
-    - Since a constant doesn’t change from instance to instance of a class, it’s handy to store it as a class attribute.
+        - Since a constant doesn’t change from instance to instance of a class, it’s handy to store it as a class attribute.
 
-    - For example, the Circle class has the pi constant that is the same for all instances of the class. Therefore, it’s a good candidate for the class attributes.
+        - For example, the Circle class has the pi constant that is the same for all instances of the class. Therefore, it’s a good candidate for the class attributes.
 
 """
 
@@ -38,5 +38,8 @@ c2 = Circle(20)
 
 # Get the length
 print(len(Circle.circle_list))  # 2
+
+
+print(Circle.pi)  # 3.14159
 print(Circle.circle_list)
 # [<__main__.Circle object at 0x000001FE444FF950>, <__main__.Circle object at 0x000001FE444FF990>]

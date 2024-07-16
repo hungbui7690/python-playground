@@ -7,6 +7,11 @@ Define class method
 
 - Python automatically passes this argument to the class method. Also, you use the @classmethod decorator to decorate a class method.
 
+
+
+@@ @classmethod
+@@    def create_anonymous(cls):
+
 @@ cls === Person
 
 """

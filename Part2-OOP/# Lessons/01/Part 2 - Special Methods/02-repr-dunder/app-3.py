@@ -1,5 +1,8 @@
 """
 Python __repr__
+- if we have both __repr__ and __str__ methods setup:
+    + if we call print(), it will run the __str__
+    + if we call print(repr()), it will run the __repr__
 
 """
 
@@ -34,9 +37,10 @@ __str__ vs __repr__
 
 - The main difference between __str__ and __repr__ method is intended audiences.
 
-- The __str__ method returns a string representation of an object that is human-readable while the __repr__ method returns a string representation of an object that is machine-readable.
+- The __str__ method returns a string representation of an object that is human-readable 
+- while the __repr__ method returns a string representation of an object that is machine-readable.
 
-
+\\\\\\\\\\\\\
 
 Summary
 

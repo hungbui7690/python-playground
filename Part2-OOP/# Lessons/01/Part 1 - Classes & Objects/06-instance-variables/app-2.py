@@ -1,6 +1,6 @@
 """
 Instance Variables
-- In Python, class variables are bound to a class while instance variables are bound to a specific instance of a class. The instance variables are also called instance attributes.
+
 
 """
 
@@ -33,7 +33,7 @@ print(type(home.__dict__))  # <class 'dict'>
 print(home.extension)  # html
 print(home.version)  # 5
 # In this case, Python looks up the variables extension and version in home.__dict__ first. If it doesn’t find them there, it’ll go up to the class and look up in the HtmlDocument.__dict__.
-# However, if Python can find the variables in the __dict__ of the instance, it won’t look further in the __dict__ of the class.
+# However, if Python CAN find the variables in the __dict__ of the instance, it won’t look further in the __dict__ of the class.
 
 
 # The following defines the version variable in the home object:

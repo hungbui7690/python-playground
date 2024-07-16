@@ -14,7 +14,7 @@ class Product:
 
     def __init__(self, price):
         self.price = price
-        self.discount = Product.default_discount
+        self.discount = Product.default_discount  # set as default value
 
     def set_discount(self, discount):
         self.discount = discount

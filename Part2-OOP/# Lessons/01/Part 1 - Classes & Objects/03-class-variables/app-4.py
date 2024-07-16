@@ -1,6 +1,10 @@
 """
 Delete class variables
 
+@@ delattr(HtmlDocument, "media_type")
+@@ del HtmlDocument.version
+
+
 """
 
 

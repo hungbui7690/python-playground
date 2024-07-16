@@ -35,6 +35,9 @@ john = Person("John", 18)
 # john.set_age(-19) # ValueError: The age must be positive
 
 
+print(john._age)
+print(john.get_age())
+
 # This code works just fine. But it has a backward compatibility issue.
 # Suppose you released the Person class for a while and other developers have been already using it. And now you add the getter and setter, all the code that uses the Person won’t work anymore.
 # To define a getter and setter method while achieving backward compatibility, you can use the property() class.

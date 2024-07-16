@@ -3,7 +3,7 @@ The Python property class
 
 - The property class returns a property object. The property() class has the following syntax:
 
-    property(fget=None, fset=None, fdel=None, doc=None)
+    @@ property(fget=None, fset=None, fdel=None, doc=None)
 
 - The property() has the following parameters:
 
@@ -23,15 +23,17 @@ class Person:
         self.name = name
         self.age = age
 
+    # (1)
     def set_age(self, age):
         if age <= 0:
             raise ValueError("The age must be positive")
         self._age = age
 
+    # (2)
     def get_age(self):
         return self._age
 
-    # define the age property for the Person class.
+    # (3) define the age property for the Person class.
     age = property(fget=get_age, fset=set_age)
 
 
@@ -42,6 +44,11 @@ print(Person.age)  # <property object at 0x000001AA0BC47A60>
 
 # The following creates a new instance of the Person class and access the age attribute:
 john = Person("John", 18)
+print(john.age)  # 18
+
+
+john.age = 22
+print(john.age)  # 22
 
 
 # The john.__dict__ stores the instance attributes of the john object. The following shows the contents of the john.__dict__ :

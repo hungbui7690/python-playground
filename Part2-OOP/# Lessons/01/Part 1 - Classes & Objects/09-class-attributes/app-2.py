@@ -5,10 +5,8 @@ Class Attributes
 
 
 # To define a class attribute, you place it outside of the __init__() method. For example, the following defines pi as a class attribute:
-
-
 class Circle:
-    pi = 3.14159
+    pi = 3.14159  # class attribute
 
     def __init__(self, radius):
         self.radius = radius

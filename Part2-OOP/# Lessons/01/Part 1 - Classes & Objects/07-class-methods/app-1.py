@@ -4,6 +4,8 @@ Class Methods
 
 - Instance methods can access instance variables within the same class. To invoke instance methods, you need to create an instance of the class first.
 
+@@ must have "self" as param when we create instance method > def get_full_name(self):
+
 """
 
 
@@ -25,8 +27,6 @@ class Person:
 
 # The Person class has three instance methods including __init__(), get_full_name(), and introduce().
 # Suppose that you want to add a method that creates an anonymous person to the Person class.
-
-
 # In order to do so, you would come up with the following code:
 class PersonX:
     def __init__(self, first_name, last_name, age):
@@ -35,7 +35,7 @@ class PersonX:
         self.age = age
 
     def create_anonymous(self):
-        return Person("John", "Doe", 25)
+        return PersonX("John", "Doe", 25)
 
 
 joe = PersonX("Joe", "Doe", 20)

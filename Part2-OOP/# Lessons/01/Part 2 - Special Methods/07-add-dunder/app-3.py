@@ -11,7 +11,7 @@ Special methods for operator overloading
     //	        __floordiv__(self, other)
     %	        __mod__(self, other)
     **	        __pow__(self, other)
-    >>	        __rshift__(self, other)
+    >>	        __rshift__(self, other) : bit shift
     <<	        __lshift__(self, other)
     &	        __and__(self, other)
     |	        __or__(self, other)

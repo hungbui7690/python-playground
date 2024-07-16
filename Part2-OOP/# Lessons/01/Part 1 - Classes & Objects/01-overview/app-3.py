@@ -1,6 +1,8 @@
 """
 Define and initialize an attribute
 
+@@ def __init__(self, name, age):
+
 """
 
 

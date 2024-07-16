@@ -4,6 +4,7 @@ Delete Property
 
 - By using the deleter, you can delete a property from an object. Notice that the deleter() method deletes a property of an object, not a class.
 
+!! @name.deleter
 
 """
 
@@ -59,8 +60,9 @@ del person.name
 
 
 # Internally, Python will execute the deleter method that deletes the _name attribute from the person object. The person.__dict__ will be empty.
-print(person.__dict__)  # {}
+pprint(person.__dict__)  # {}
+pprint(Person.__dict__)  # "name" is still in here
 
 
 # And if you attempt to access name property again, you’ll get an error:
-print(person.name)  # AttributeError: 'Person' object has no attribute '_name'
+# print(person.name)  # AttributeError: 'Person' object has no attribute '_name'

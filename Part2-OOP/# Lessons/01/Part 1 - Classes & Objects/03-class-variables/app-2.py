@@ -1,6 +1,10 @@
 """
 Get the values of class variables
 
+
+@@ getattr(HtmlDocument, "version")
+@@ getattr(HtmlDocument, "media_type", "text/html")
+
 """
 
 

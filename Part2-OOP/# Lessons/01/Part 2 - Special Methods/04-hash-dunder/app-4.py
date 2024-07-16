@@ -6,8 +6,6 @@ Python __hash__
 
 
 # To make the Person work well in data structures like dictionaries, the hash of the class should remain immutable. To do it, you can make the age attribute of the Person class a read-only property:
-
-
 class Person:
     def __init__(self, name, age):
         self.name = name

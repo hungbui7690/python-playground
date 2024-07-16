@@ -5,9 +5,11 @@ Python __del__
 
 - If an object implements the __del__ method, Python calls the __del__ method right before the garbage collector destroys the object.
 
-- However, the garbage collector determines when to destroy the object. Therefore, it determines when the __del__ method will be called.
+- However, the garbage collector determines when to destroy the object. 
+- Therefore, it determines when the __del__ method will be called.
 
-- The __del__ is sometimes referred to as a class finalizer. Note that __del__ is not the destructor because the garbage collector destroys the object, not the __del__ method.
+- The __del__ is sometimes referred to as a class finalizer. 
+- Note that __del__ is NOT the destructor because the garbage collector destroys the object, not the __del__ method.
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -42,7 +44,8 @@ class Person:
 
 if __name__ == "__main__":
     person = Person("John Doe", 23)
-    person = None
+    person = None  # calls __del__
+
 
 # __del__ was called
 # When we set the person object to None, the garbage collector destroys it because there is no reference. Therefore, the __del__ method was called.
@@ -55,7 +58,7 @@ del person
 
 
 # Summary
-#     Python calls the __del__ method right before the garbage collector destroys the object.
-#     The garbage collector destroys an object when there is no reference to the object.
-#     Exception occurs inside the __del__ method is not raised but silent.
-#     Avoid using __del__ for clean up resources; use the context manager instead.
+# Python calls the __del__ method right before the garbage collector destroys the object.
+# The garbage collector destroys an object when there is no reference to the object.
+# Exception occurs inside the __del__ method is not raised but silent.
+# Avoid using __del__ for clean up resources; use the context manager instead.

@@ -1,22 +1,23 @@
 """
 Name mangling with double underscores
+
 - If you prefix an attribute name with double underscores (__) like this:
 
-    ~~ __attribute
+    @@ __attribute
 
 - Python will automatically change the name of the __attribute to:
 
-    ~~ _class__attribute
+    @@ _class__attribute
 
 - This is called the name mangling in Python.
 
 - By doing this, you cannot access the __attribute directly from the outside of a class like:
 
-    ~~ instance.__attribute
+    instance.__attribute
 
 - However, you still can access it using the _class__attribute name:
 
-    ~~ instance._class__attribute
+    @@ instance._class__attribute
 
 """
 
@@ -40,8 +41,9 @@ class Counter:
 
 # Now, if you attempt to access __current attribute, you’ll get an error:
 counter = Counter()
-# print(counter.__current) # AttributeError: 'Counter' object has no attribute '__current'
 
+# Error
+# print(counter.__current) # AttributeError: 'Counter' object has no attribute '__current'
 
 # However, you can access the __current attribute as _Counter___current like this:
 print(counter._Counter__current)  # 0

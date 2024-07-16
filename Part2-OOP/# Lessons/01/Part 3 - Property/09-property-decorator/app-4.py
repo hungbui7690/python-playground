@@ -1,6 +1,8 @@
 """
 Setter decorators
 
+!! @name.setter
+
 """
 
 
@@ -20,7 +22,7 @@ class Person:
         self._age = value
 
 
-# To assign the set_age to the fset of the age property object, you call the setter() method of the age property object like the following:
+# Method 1: To assign the set_age to the fset of the age property object, you call the setter() method of the age property object like the following:
 class PersonX:
     def __init__(self, name, age):
         self.name = name
@@ -38,7 +40,7 @@ class PersonX:
     age = age.setter(set_age)
 
 
-# The setter() method accepts a callable and returns another callable (a property object). Therefore, you can use the decorator @age.setter for the set_age() method like this:
+# Method 2: The setter() method accepts a callable and returns another callable (a property object). Therefore, you can use the decorator @age.setter for the set_age() method like this:
 class PersonY:
     def __init__(self, name, age):
         self.name = name

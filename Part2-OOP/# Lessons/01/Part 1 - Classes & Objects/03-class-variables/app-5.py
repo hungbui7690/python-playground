@@ -1,6 +1,10 @@
 """
 Class variable storage
 
+@@ from pprint import pprint
+
+@@ pprint(HtmlDocument.__dict__)
+
 """
 
 from pprint import pprint
@@ -39,4 +43,4 @@ As clearly shown in the output, the __dict__ has three class variables: extensio
 # 3. However, you can use the setattr() function or dot notation to indirectly change the __dict__ attribute.
 # Also, the key of the __dict__ are strings that will help Python speeds up the variable lookup.
 # Although Python allows you to access class variables through the __dict__ dictionary, it’s not a good practice. Also, it won’t work in some situations. For example:
-print(HtmlDocument.__dict__["extension"])  # BAD CODE - html
+print(HtmlDocument.__dict__["extension"])  # BAD CODE

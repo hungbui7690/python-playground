@@ -1,6 +1,8 @@
 """
 Python __str__
 
+@@ Without __str__ setup, print(person) shows the memory address that instance
+
 """
 
 

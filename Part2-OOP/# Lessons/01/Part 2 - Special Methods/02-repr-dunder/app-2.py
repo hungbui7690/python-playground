@@ -1,5 +1,10 @@
 """
 Python __repr__
+- __repr__ methods effects the print function
+
+- After setup the __repr__ method, we can use these 2 functions to call it
+!! print(repr(person))
+!! print(person)
 
 """
 

@@ -6,8 +6,6 @@ Python __hash__
 
 
 # To make the Person class hashable, you also need to implement the __hash__ method:
-
-
 class Person:
     def __init__(self, name, age):
         self.name = name

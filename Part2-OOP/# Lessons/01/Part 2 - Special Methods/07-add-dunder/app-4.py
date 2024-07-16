@@ -25,7 +25,7 @@ Overloading inplace operators
 
 - Let’s take an example of overloading the += operator.
 
-- Suppose you have a cart object and you want to add an item to the cart. To do you, you can define an add() method to the Cart class and use it like this:
+- Suppose you have a cart object and you want to add an item to the cart. To do, you can define an add() method to the Cart class and use it like this:
 
     cart.add(item)
 
@@ -58,13 +58,6 @@ class Cart:
     def __init__(self):
         self.items = []
 
-    def __iadd__(self, item):
-        if not isinstance(item, Item):
-            raise ValueError("The item must be an instance of Item")
-
-        self.items.append(item)
-        return self
-
     @property
     def total(self):
         return sum([item.amount for item in self.items])
@@ -74,6 +67,13 @@ class Cart:
             return "The cart is empty"
 
         return "\n".join([str(item) for item in self.items])
+
+    def __iadd__(self, item):
+        if not isinstance(item, Item):
+            raise ValueError("The item must be an instance of Item")
+
+        self.items.append(item)
+        return self
 
 
 # In the __iadd__ method, we raise a ValueError if the item is not an instance of the Item class. Otherwise, we add the item to the items list attribute.
