@@ -47,4 +47,11 @@ for color in colors:
 # blue
 
 
+for color in colors:
+    print(color)
+# red
+# green
+# blue
+
+
 # Internally, the for loop calls the __iter__ method of the colors object to get the iterator and uses this iterator to iterate over the elements of the colors object.

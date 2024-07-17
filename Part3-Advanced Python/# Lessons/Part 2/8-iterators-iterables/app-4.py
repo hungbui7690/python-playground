@@ -28,7 +28,6 @@ class ColorIterator:
         if self.__index >= len(self.__colors):
             raise StopIteration
 
-        # return the next color
         color = self.__colors.rgb[self.__index]
         self.__index += 1
         return color
@@ -37,9 +36,9 @@ class ColorIterator:
 """
 How it works.
 
-  The __init__ method accepts an iterable which is an instance of the Colors class.
-  The __iter__ method returns the iterator itself.
-  The __next__ method returns the next element from the Colors object.
+    The __init__ method accepts an iterable which is an instance of the Colors class.
+    The __iter__ method returns the iterator itself.
+    The __next__ method returns the next element from the Colors object.
 """
 
 

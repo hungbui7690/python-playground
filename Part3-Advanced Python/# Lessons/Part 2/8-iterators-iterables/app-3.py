@@ -16,7 +16,7 @@ class Colors:
         return self
 
     def __next__(self):
-        if self.__index and len(self.rgb):
+        if self.__index >= len(self.rgb):
             raise StopIteration
 
         # return the next color
@@ -37,9 +37,12 @@ The Colors class is also an iterable because it implements the __iter__ method t
 # The following creates a new instance of the Colors class and iterates over its elements using a for loop:
 colors = Colors()
 
+
 for color in colors:
     print(color)
 # red
+# green
+# blue
 
 
 # Once you complete iterating, the colors object becomes useless. If you attempt to iterate it again, you’ll get a StopIteration exception:
@@ -50,4 +53,5 @@ for color in colors:
 print("Run Again...")
 for color in colors:
     print(color)
+
 # To iterate again, you need to create a new colors object with the rgb attribute. This is inefficient

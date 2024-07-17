@@ -64,23 +64,23 @@ for sq in square:
 
 How it works:
 
-  First, create a new instance of the Square class.
-  Then, use the for loop to iterate over items of the square iterator.
+    First, create a new instance of the Square class.
+    Then, use the for loop to iterate over items of the square iterator.
 
-Once you iterate over all the items, the iterator is exhausted. It means you need to create a new iterator to iterate over its items again.
+    Once you iterate over all the items, the iterator is exhausted. It means you need to create a new iterator to iterate over its items again.
 
-If you attempt to use the iterator that is already exhausted, you’ll get the StopIteration exception. For example:
+    If you attempt to use the iterator that is already exhausted, you’ll get the StopIteration exception. For example:
 
-    next(square)
+        next(square)
 
-Also, an iterator cannot be restarted because it only has the __next__ method that returns the next item from a collection.
+    Also, an iterator cannot be restarted because it only has the __next__ method that returns the next item from a collection.
 
 \\\\\\\\\\\\\\\\\\\\
 
 Summary
 
-  An iterator is an object that implements __iter__ and __next__ methods.
-  An iterator cannot be reusable once all items have been returned.
+    An iterator is an object that implements __iter__ and __next__ methods.
+    An iterator cannot be reusable once all items have been returned.
 
 
 """

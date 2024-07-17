@@ -16,13 +16,13 @@ Iterables
 
 - An iterable is an object that you can iterate over.
 
-- An object is iterable when it implements the __iter__ method. And its __iter__ method returns a new iterator.
+!! An object is iterable when it implements the __iter__ method. And its __iter__ method returns a new iterator.
 
 """
 
 
 # Examining the built-in list and list iterator
-# In Python, a list is an ordered collection of items. It’s also an iterable because a list object has the __iter__ method that returns an iterator. For example:
+# !! In Python, a list is an ordered collection of items. It’s also an iterable because a list object has the __iter__ method that returns an iterator. For example:
 
 numbers = [1, 2, 3]
 
@@ -35,12 +35,11 @@ print(type(number_iterator))  # <class 'list_iterator'>
 
 numbers = [1, 2, 3]
 number_iterator = iter(numbers)
-
+print(type(number_iterator))  # <class 'list_iterator'>
 
 # Since the list_iterator also implements the __next__ method, you can use the built-in function next to iterate over the list:
 
 numbers = [1, 2, 3]
-
 number_iterator = iter(numbers)
 
 next(number_iterator)
