@@ -1,0 +1,8 @@
+POST http://localhost:5000/api/ninjas
+content-type: application/json
+
+{
+  "name": "Hatory",
+  "belt_color": "Black",
+  "special_move": "Ultra Strike"
+}
